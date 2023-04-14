@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Face-Off | Home</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<header>
+    <h1>Film Face-Off</h1>
+    <h3>Many Films Enter, Only One Can Win...</h3>
+</header>
+
+<body>
+    <div class="container">
+    <div class="translucent-form-overlay">
+        <form>
+          <h3>Search for Movies</h3>
+          
+          <!-- Form section for Genre selection -->
+          <div class="row columns">
+            <label>Genre
+              <select name="Genre" id="Genre" type="text">
+                <option value="Any">Any</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+              </select>
+            </label>
+          </div>
+
+          <!-- Form section for Rating (high and low) selection -->
+          <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+              <div class="medium-6 cell">
+                <label>Lowest Rating
+                  <input type="text" id="ratingLow" placeholder="Lowest Rating (0-10)">
+                </label>
+              </div>
+              <div class="medium-6 cell">
+                <label>Highest Rating
+                  <input type="text" id="ratingHigh" placeholder="Highest Rating (0-10)">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form section for actor/actress selection -->
+          <div class="row columns">
+            <label>Actors/Actresses
+              <input type="text" id='Actors' name="location" placeholder="Any">
+            </label>
+        </div>
+        
+        <!-- Form section for year range (from/to) selection -->
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+              <div class="medium-6 cell">
+                <label>Year Range (from)
+                  <input type="text" id="yearFrom" placeholder="(from)">
+                </label>
+              </div>
+              <div class="medium-6 cell">
+                <label>Year Range (to)
+                  <input type="text" id="yearTo" placeholder="(to)">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- search button -->
+          <button type="button" class="primary button expanded search-button">
+            Search
+          </button>
+       </form>
+      </div>
+    </div>
+      
+      
+      
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
