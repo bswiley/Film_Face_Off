@@ -1,5 +1,6 @@
 $(document).foundation()
 
+
 //constructors for main page movie preference values
 const button = document.querySelector('button');
 const Genre = document.getElementById('Genre');
@@ -22,3 +23,11 @@ button.addEventListener('click', function(event) {
     }
   window.location.href = 'htmls/error.html';
 });
+
+var apiURL = "http://www.omdbapi.com/?i=tt3896198&apikey=2d8eaee1";
+
+fetch(apiURL)
+.then(function(response){
+    return response.json;
+})
+
