@@ -1,4 +1,4 @@
-//$(document).foundation()
+$(document).foundation();
 
 //var omdbURL = "http://www.omdbapi.com/?i=tt3896198&apikey=2d8eaee1";
 
@@ -18,7 +18,7 @@ const Actors = document.getElementById('Actors')
 const yearFrom = document.getElementById('yearFrom');
 const yearTo = document.getElementById('yearTo');
 
-button.addEventListener('click', function(event) {
+/*button.addEventListener('click', function(event) {
     event.preventDefault();
 
     //tries to access faceoff.html, if it catches an error it redirects to error.html
@@ -30,7 +30,7 @@ button.addEventListener('click', function(event) {
       window.location.href = 'error.html';
     }
   window.location.href = 'htmls/error.html';
-});
+});*/
 
 //Prints a list of viable genres to the console.
 //This method will not be in final version, only exists to test api calls
@@ -54,10 +54,7 @@ fetch(similarMovie).then(function(response){
 }).then(function (data) {
     console.log(data);
     movieList = data.results;
-
-    for(var i=0; i<19; i++){
-      console.log(movieList[i]);
-    }
+    $('#title-left').textContent = movieList[0].original_title;
 });
 }
 
