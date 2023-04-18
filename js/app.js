@@ -45,8 +45,7 @@ fetch(tmdbURL).then(function(response){
     }
 });
 }
-function searchActor(actorName){
-var actorSearch = " https://api.themoviedb.org/3/search/person?query="+actorName+"&api_key=0369d0746be36bbf12f206aeb60eac4d&language=en-US&page=1&include_adult=false";
+function searchMovie(){
 
 fetch(similarMovie).then(function(response){
 
@@ -62,7 +61,7 @@ fetch(similarMovie).then(function(response){
 });
 }
 
-searchActor("Nicolas Cage");
+searchMovie();
 
 //Searches an Actor by name and pulls their information from the database.
 //Only pulls their 3 most popular movies, may not work for what we want?
