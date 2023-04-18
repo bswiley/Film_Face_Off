@@ -1,4 +1,4 @@
-//$(document).foundation()
+$(document).foundation();
 
 //var omdbURL = "http://www.omdbapi.com/?i=tt3896198&apikey=2d8eaee1";
 
