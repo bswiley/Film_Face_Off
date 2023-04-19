@@ -1,7 +1,7 @@
 var movie = document.querySelector(".videoWrapper")
 var titleOnPage = document.querySelector("#movieTitle")
 console.log (titleOnPage)
-var winner = "Batman (1989)"
+var winner = "Metropolis"
 titleOnPage.textContent = winner
 var linkEnding;
 function searchVideo(movieTitle) {
@@ -29,7 +29,8 @@ function searchVideo(movieTitle) {
       //grabs first video and then plays that video in a new window
       console.log (data)
       linkEnding = data.items[0].id.videoId;
-      var iframe = `<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/${linkEnding}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> `
+      console.log (linkEnding)
+      var iframe = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${linkEnding}" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> `
       movie.innerHTML=iframe
       console.log (iframe)
 
