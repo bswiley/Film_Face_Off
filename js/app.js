@@ -28,7 +28,7 @@ var tmdbURL = "https://api.themoviedb.org/3/genre/movie/list?api_key=0369d0746be
 
 var similarMovie = "https://api.themoviedb.org/3/movie/49519/similar?api_key=0369d0746be36bbf12f206aeb60eac4d&language=en-US&page=1";
 
-var movieList = [];
+var movieList=[];
 
 //constructors for main page movie preference values
 const button = document.querySelector('#button');
@@ -39,7 +39,7 @@ const Actors = document.getElementById('Actors')
 const yearFrom = document.getElementById('yearFrom');
 const yearTo = document.getElementById('yearTo');
 
-const movie1 = {poster:"img1", Title:"movie1", description:"Movie Description 1"};
+var movie1 = {poster:"img1", Title:"movie1", description:"Movie Description 1"};
 const movie2 = {poster:"img2", Title:"movie2", description:"Movie Description 2"};
 const movie3 = {poster:"img3", Title:"movie3", description:"Movie Description 3"};
 const movie4 = {poster:"img4", Title:"movie4", description:"Movie Description 4"};
@@ -86,27 +86,30 @@ fetch(tmdbURL).then(function(response){
     }
 });
 }
+
 function searchMovie(){
-
 fetch(similarMovie).then(function(response){
-
-
   return response.json();
-
-
-fetch(apiURL)
-.then(function(response){
-    return response.json;
-})
-
 }).then(function (data) {
     console.log(data);
-    movieList = data.results;
+    movieList = data;
 });
 }
 
 searchMovie();
 
+function loadFaceOff(){
+  fetch(similarMovie).then(function(response){
+  return response.json();
+}).then(function (data) {
+    console.log(data);
+    movieList = data;
+    document.querySelector('#movie-title-1').textContent = movieList.results[0].original_title;
+    document.querySelector('#movie-title-2').textContent = movieList.results[1].original_title;
+    document.querySelector('#movie-description-1').textContent = movieList.results[0].overview;
+    document.querySelector('#movie-description-2').textContent = movieList.results[1].overview;
+  });
+}
 //Searches an Actor by name and pulls their information from the database.
 //Only pulls their 3 most popular movies, may not work for what we want?
 
