@@ -1,7 +1,11 @@
 var movie = document.querySelector(".videoWrapper")
+var titleOnPage = document.querySelector("#movieTitle")
+console.log (titleOnPage)
+var winner = "Batman (1989)"
+titleOnPage.textContent = winner
 var linkEnding;
-function searchVideo() {
-  var searchQuery = "Batman (2022)" + "trailer";
+function searchVideo(movieTitle) {
+  var searchQuery = movieTitle + "trailer";
   var youtubeApiKey = "kAIzaSyB4vGuFttVUg7voCvRZHYmaH_oB0YDPujk";
   var youtubeApi = "https://www.googleapis.com/youtube/v3/search";
   //grabs a video based off searchQuery value and provides one result
@@ -35,7 +39,7 @@ function searchVideo() {
 }
  // logVideo(videoUrl)}
 
-searchVideo();
+searchVideo(winner);
 console.log(linkEnding)
 
 function logVideo(){ 
