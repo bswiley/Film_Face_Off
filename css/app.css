@@ -108,3 +108,27 @@ body {
   color: #022b4a;
   border: 1px solid;
 }
+.wrapper{
+  margin: 0 auto;
+  width:75%
+  }
+  
+  .videoWrapper{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+  }
+  
+  .videoWrapper iframe{
+  position: absolute;
+  left:0px;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  height: 90%;
+  width: 90%;
+  }
+  #winnerTitle{
+    background 
+  }

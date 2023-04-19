@@ -1,9 +1,3 @@
-/*JS
-Copy
-$('.sim-thumb').on('click', function() {
-  $('#main-product-image').attr('src', $(this).data('image'));
-})
-*/
 var movie = document.querySelector(".videoWrapper")
 var linkEnding;
 function searchVideo() {
@@ -34,7 +28,7 @@ function searchVideo() {
       var iframe = `<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/${linkEnding}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> `
       movie.innerHTML=iframe
       console.log (iframe)
-    //  var videoUrl = "https://www.youtube.com/watch?v=" + video;
+
       
   });
  
