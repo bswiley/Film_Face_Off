@@ -1,4 +1,26 @@
 $(document).foundation();
+/*
+genres {
+"Action: 28,
+"Adventure": 12,
+"Animation": 16,
+"Comedy": 35,
+"Crime": 80,
+"Documentary": 99,
+"Drama": 18,
+"Family": 10751,
+"Fantasy": 14,
+"History": 36,
+"Horror": 27,
+"Music": 10402,
+"Mystery": 9648,
+"Romance": 10749,
+"Science Fiction": 878,
+"TV Movie": 10770,
+"Thriller": 53,
+"war": 17,
+"Western": 18
+}
 //var omdbURL = "http://www.omdbapi.com/?i=tt3896198&apikey=2d8eaee1";
 
 //HTTPS Links for API call
@@ -87,16 +109,39 @@ searchMovie();
 
 //Searches an Actor by name and pulls their information from the database.
 //Only pulls their 3 most popular movies, may not work for what we want?
-/*function searchActor(actorName){
-var actorSearch = " https://api.themoviedb.org/3/search/person?query="+actorName+"&api_key=0369d0746be36bbf12f206aeb60eac4d&language=en-US&page=1&include_adult=false";
+
+var movie = [0,1,2,3,4,5,6,7,]
+function searchActor(actorName){
+var actorSearch = "https://api.themoviedb.org/3/search/person?api_key=&language=en-US&page=1&include_adult=false&query="+actorName;
 
 fetch(actorSearch).then(function(response){
 
   return response.json();
 
 }).then(function (data) {
-    console.log(data);
-});
-}
+var actorId = data.results[0].id  
+console.log (actorId);
+    
+})}
 
-searchActor("Nicolas Cage");*/
+searchActor("Nicolas Cage");
+
+*/
+
+
+
+var movie = [0,1,2,3,4,5,6,7,]
+function searchActor(blank){
+var actorSearch = "https://api.themoviedb.org/3/genre/movie/list?api_key=0369d0746be36bbf12f206aeb60eac4d&language=en-US"
+
+fetch(actorSearch).then(function(response){
+
+  return response.json();
+
+}).then(function (data) {
+
+console.log (data);
+    
+})}
+
+searchActor ()
