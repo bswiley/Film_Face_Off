@@ -1,7 +1,7 @@
 $(document).foundation();
-/*
-genres {
-"Action: 28,
+
+var genres =  {
+"Action": 28,
 "Adventure": 12,
 "Animation": 16,
 "Comedy": 35,
@@ -20,10 +20,16 @@ genres {
 "Thriller": 53,
 "war": 10752,
 "Western": 37
-}
+};
+
+
 //var omdbURL = "http://www.omdbapi.com/?i=tt3896198&apikey=2d8eaee1";
 
 //HTTPS Links for API call
+var apikey = "0369d0746be36bbf12f206aeb60eac4d";
+
+var posterLink = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2";
+
 var tmdbURL = "https://api.themoviedb.org/3/genre/movie/list?api_key=0369d0746be36bbf12f206aeb60eac4d&language=en-US";
 
 var similarMovie = "https://api.themoviedb.org/3/movie/49519/similar?api_key=0369d0746be36bbf12f206aeb60eac4d&language=en-US&page=1";
@@ -39,7 +45,7 @@ const Actors = document.getElementById('Actors')
 const yearFrom = document.getElementById('yearFrom');
 const yearTo = document.getElementById('yearTo');
 
-var movie1 = {poster:"img1", Title:"movie1", description:"Movie Description 1"};
+const movie1 = {poster:"img1", Title:"movie1", description:"Movie Description 1"};
 const movie2 = {poster:"img2", Title:"movie2", description:"Movie Description 2"};
 const movie3 = {poster:"img3", Title:"movie3", description:"Movie Description 3"};
 const movie4 = {poster:"img4", Title:"movie4", description:"Movie Description 4"};
@@ -108,6 +114,8 @@ function loadFaceOff(){
     document.querySelector('#movie-title-2').textContent = movieList.results[1].original_title;
     document.querySelector('#movie-description-1').textContent = movieList.results[0].overview;
     document.querySelector('#movie-description-2').textContent = movieList.results[1].overview;
+    document.querySelector('#movie-img-1').src = posterLink+movieList.results[0].poster_path;
+    document.querySelector('#movie-img-2').src = posterLink+movieList.results[1].poster_path;
   });
 }
 //Searches an Actor by name and pulls their information from the database.
@@ -129,7 +137,7 @@ console.log (actorId);
 
 searchActor("Nicolas Cage");
 
-*/
+
 
 
 
