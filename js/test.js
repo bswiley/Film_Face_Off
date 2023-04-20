@@ -40,5 +40,5 @@ movie[i] = data.credits.cast[i].original_title
 console.log (movie)};
 
 
-searchActor("Brad Pitt");
+searchActor("Julia Roberts");
 
