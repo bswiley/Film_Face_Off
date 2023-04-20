@@ -79,9 +79,11 @@ voteButton1.addEventListener('click', function() {
   console.log('Button 1 clicked!');
   LastWinningMovie = movieList.results[currentMovieIndex - 1];
   if (currentMovieIndex < 8) {
+    console.log(LastWinningMovie.original_title)
     updateMovies(1);
     currentMovieIndex++;
   } else {
+    console.log(LastWinningMovie.original_title)
     var lSHandle = "winner"
 var winner = LastWinningMovie.original_title;
 var storeWinner = {
