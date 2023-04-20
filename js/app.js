@@ -1,5 +1,5 @@
 $(document).foundation();
-/*
+
 genres {
 "Action: 28,
 "Adventure": 12,
@@ -129,7 +129,7 @@ console.log (actorId);
 
 searchActor("Nicolas Cage");
 
-*/
+
 
 
 
