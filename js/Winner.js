@@ -1,12 +1,12 @@
 
 
-//This goes to the end of app.js to save the winner.  If the variable "winner" is already defined to the winning video we can delete the second line
+/*/This goes to the end of app.js to save the winner.  If the variable "winner" is already defined to the winning video we can delete the second line
 var lSHandle = "winner"
 var winner = "Star Wars (1977)"
 var storeWinner = { 
     "Winner": winner
 }
-localStorage.setItem(lSHandle, JSON.stringify(storeWinner));
+localStorage.setItem(lSHandle, JSON.stringify(storeWinner));*/
 //this is the start of the code for "winner.js"
 
 //This gets the title from local storage as saved in the app.js 
