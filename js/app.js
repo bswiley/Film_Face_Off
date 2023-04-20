@@ -1,7 +1,7 @@
 $(document).foundation();
 
-var genres=  {
-"Action": 2,
+var genres =  {
+"Action": 28,
 "Adventure": 12,
 "Animation": 16,
 "Comedy": 35,
@@ -18,8 +18,8 @@ var genres=  {
 "Science Fiction": 878,
 "TV Movie": 10770,
 "Thriller": 53,
-"war": 17,
-"Western": 18
+"war": 10752,
+"Western": 37
 };
 
 //var omdbURL = "http://www.omdbapi.com/?i=tt3896198&apikey=2d8eaee1";
