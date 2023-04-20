@@ -130,5 +130,9 @@ body {
   width: 90%;
   }
   #winnerTitle{
-    background 
+
+  }
+
+  .movie-poster{
+    max-height: 400px;
   }
