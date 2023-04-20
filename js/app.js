@@ -1,7 +1,12 @@
 $(document).foundation();
 
+<<<<<<< HEAD
+genres {
+"Action: 28,
+=======
 var genres =  {
 "Action": 28,
+>>>>>>> b47660c9d37b6f4dcd69623810d2790d971daa9c
 "Adventure": 12,
 "Animation": 16,
 "Comedy": 35,
