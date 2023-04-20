@@ -18,8 +18,8 @@ genres {
 "Science Fiction": 878,
 "TV Movie": 10770,
 "Thriller": 53,
-"war": 17,
-"Western": 18
+"war": 10752,
+"Western": 37
 }
 //var omdbURL = "http://www.omdbapi.com/?i=tt3896198&apikey=2d8eaee1";
 
