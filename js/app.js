@@ -22,6 +22,7 @@ var genres =  {
 "Western": 37
 };
 
+
 //var omdbURL = "http://www.omdbapi.com/?i=tt3896198&apikey=2d8eaee1";
 
 //HTTPS Links for API call
