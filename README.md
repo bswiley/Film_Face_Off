@@ -26,11 +26,10 @@ When the page is opened the user is prompted by a form to enter information abou
 
 The user will be prompted with two movie titles, descriptions, and posters. They may pick whichever movie seems more appealing, which sends it to the next of the bracket. 
 
-![Screenshot 3 of quiz](https://raw.githubusercontent.com/Francisjung/JS_Quiz_FJ/main/assets/h4%20screenshot%203.PNG)
 
 When the user has chosen a winner for each matchup a winner is chosen. The winner is then displayed on the final page.
 
-![Screenshot 4 of quiz](https://raw.githubusercontent.com/Francisjung/JS_Quiz_FJ/main/assets/h4%20screenshot%204.PNG)
+
 
 ## Credits
 This project was developed by Francis Jung (https://github.com/Francisjung), Brian Wiley (https://github.com/bswiley), John Quaranta (https://github.com/JohnnyQ40), and Colin Laukka (https://github.com/claukka).
