@@ -18,11 +18,11 @@
 
 To start the application, go to (https://francisjung.github.io/Film_Face_Off/).
 
-![Screenshot 1 of App](https://raw.githubusercontent.com/Francisjung/JS_Quiz_FJ/main/assets/h4-screenshot.PNG)
+![Screenshot 1 of App](https://raw.githubusercontent.com/Francisjung/Film_Face_Off/main/ReadmeAssets/film_face_off.PNG)
 
 When the page is opened the user is prompted by a form to enter information about movies they might enjoy or be curious about. At the moment the Genre drop down has been finished.
 
-![Screenshot 2 of quiz](https://raw.githubusercontent.com/Francisjung/JS_Quiz_FJ/main/assets/h4%20screenshot%202.PNG)
+![Screenshot 2 of App](https://raw.githubusercontent.com/Francisjung/Film_Face_Off/main/ReadmeAssets/film_face_off_2.PNG)
 
 The user will be prompted with two movie titles, descriptions, and posters. They may pick whichever movie seems more appealing, which sends it to the next of the bracket. 
 
