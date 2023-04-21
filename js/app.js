@@ -32,7 +32,7 @@ var posterLink = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2";
 
 var tmdbURL = "https://api.themoviedb.org/3/genre/movie/list?api_key=0369d0746be36bbf12f206aeb60eac4d&language=en-US";
 
-var similarMovie = "https://api.themoviedb.org/3/movie/28/similar?api_key=0369d0746be36bbf12f206aeb60eac4d&language=en-US&page=1";
+var similarMovie = "https://api.themoviedb.org/3/movie/49519/similar?api_key=0369d0746be36bbf12f206aeb60eac4d&language=en-US&page=1";
 
 var movieList=[];
 
@@ -41,7 +41,7 @@ const button = document.querySelector('#button');
 const Genre = document.getElementById('Genre');
 const lowRating = document.getElementById('ratingLow');
 const highRating = document.getElementById('ratingHigh');
-const Actors = document.getElementById('Actors')
+const actors = document.querySelector('#actors')
 const yearFrom = document.getElementById('yearFrom');
 const yearTo = document.getElementById('yearTo');
 
@@ -50,15 +50,20 @@ const voteButton2 = document.getElementById('faceoffButton2');
 
 if (button) {
   button.addEventListener('click', function(event) {
-    try {
-      window.location.href = 'htmls/faceoff.html';
+   event.preventDefault();
+   actor = actors.value;
+   saveString = {
+    "actor":actor
+   }
+  localStorage.setItem("actor", JSON.stringify(saveString));
+   try {
+      window.location.href = './htmls/faceoff.html';
     } catch (error) {
       console.error('An error occurred:', error);
       window.location.href = 'htmls/error.html';
     }
-});
-}
-
+})}
+ /*
 let currentMovieIndex = 2;
 let LastWinningMovie;
 
@@ -75,7 +80,6 @@ function updateMovies(winningButton) {
 }
 
 //Left button event listener, replaces losing movie and saves winning movie.
-if(voteButton1){
 voteButton1.addEventListener('click', function() {
   console.log('Button 1 clicked!');
   LastWinningMovie = movieList.results[currentMovieIndex - 1];
@@ -99,9 +103,7 @@ localStorage.setItem(lSHandle, JSON.stringify(storeWinner));
     }
   }
 });
-}
 //Right button event listener, replaces losing movie and saves winning movie.
-if(voteButton2){
 voteButton2.addEventListener('click', function() {
   console.log('Button 2 clicked!');
   LastWinningMovie = movieList.results[currentMovieIndex];
@@ -123,7 +125,6 @@ localStorage.setItem(lSHandle, JSON.stringify(storeWinner));
     }
   }
 });
-}
 
 //Prints a list of viable genres to the console.
 //This method will not be in final version, only exists to test api calls
@@ -203,3 +204,4 @@ console.log (data);
 
 searchActor ()
 
+*/
